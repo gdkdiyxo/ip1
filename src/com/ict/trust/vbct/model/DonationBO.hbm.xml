@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 Jul, 2015 1:05:25 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ict.trust.vbct.model.DonationBO" table="donor_mst">
+        <id name="donor_id" type="java.lang.String">
+            <column name="DONOR_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="donor_name" type="java.lang.String">
+            <column name="DONOR_NAME" />
+        </property>
+        <property name="donation_purpose" type="java.lang.String">
+            <column name="DONATION_PURPOSE" />
+        </property>
+        <property name="donation_amount" type="java.lang.String">
+            <column name="DONATION_AMOUNT" />
+        </property>
+        <property name="country" type="java.lang.String">
+            <column name="COUNTRY" />
+        </property>
+        <property name="mobile_number" type="java.lang.String">
+            <column name="MOBILE_NUMBER" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        <property name="upd_dt" type="java.lang.String">
+            <column name="UPD_DT" />
+        </property>
+        <property name="upd_usr" type="java.lang.String">
+            <column name="UPD_USR" />
+        </property>
+        <property name="crt_dt" type="java.lang.String">
+            <column name="CRT_DT" />
+        </property>
+        <property name="crt_usr" type="java.lang.String">
+            <column name="CRT_USR" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+        <property name="receipt_no" type="java.lang.String">
+            <column name="RECEIPT_NO" />
+        </property>
+        <property name="receipt_dt" type="java.lang.String">
+            <column name="RECEIPT_DT" />
+        </property>
+        <property name="pay_mode" type="java.lang.String">
+            <column name="PAY_MODE" />
+        </property>
+        <property name="std_code" type="java.lang.String">
+            <column name="std_code" />
+        </property>
+        <property name="remarks" type="java.lang.String">
+            <column name="remarks" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="address" />
+        </property>
+    </class>
+</hibernate-mapping>

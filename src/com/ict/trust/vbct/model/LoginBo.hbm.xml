@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 19-Mar-2016 8:05:57 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ict.trust.vbct.model.LoginBo" table="login">
+        <id name="login_id" type="int">
+            <column name="LOGIN_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="student_id" type="int">
+            <column name="STUDENT_ID" />
+        </property>
+        <property name="username" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+        <property name="pwd" type="java.lang.String">
+            <column name="PWD" />
+        </property>
+        <property name="user_type" type="java.lang.String">
+            <column name="USER_TYPE" />
+        </property>
+        <property name="flag" type="java.lang.String">
+            <column name="FLAG" />
+        </property>
+    </class>
+</hibernate-mapping>

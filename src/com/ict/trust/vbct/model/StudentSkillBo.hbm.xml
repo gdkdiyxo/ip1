@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 5-Apr-2016 3:41:38 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ict.trust.vbct.model.StudentSkillBo" table="student_skill">
+        <id name="student_skill_id" type="int">
+            <column name="STUDENT_SKILL_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="skill_id" type="int">
+            <column name="SKILL_ID" />
+        </property>
+        <property name="student_id" type="int">
+            <column name="STUDENT_ID" />
+        </property>
+        <property name="skill_name" type="int">
+            <column name="SKILL_NAME" />
+        </property>
+    </class>
+</hibernate-mapping>

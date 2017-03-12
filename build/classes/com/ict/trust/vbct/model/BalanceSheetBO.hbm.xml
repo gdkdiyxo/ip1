@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 04-Jul-2015 14:39:27 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ict.trust.vbct.model.BalanceSheetBO" table="balance_sheet_mst">
+        <id name="sheet_id" type="java.lang.String">
+            <column name="SHEET_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="sheet_title" type="java.lang.String">
+            <column name="SHEET_TITLE" />
+        </property>
+        <property name="sheet_year" type="java.lang.String">
+            <column name="SHEET_YEAR" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" default="N"/>
+        </property>
+        <property name="upd_dt" type="java.lang.String">
+            <column name="UPD_DT" />
+        </property>
+        <property name="upd_usr" type="java.lang.String">
+            <column name="UPD_USR" />
+        </property>
+        <property name="crt_dt" type="java.lang.String">
+            <column name="CRT_DT" />
+        </property>
+        <property name="crt_usr" type="java.lang.String">
+            <column name="CRT_USR" />
+        </property>
+       	<property name="sheet_data" type="binary">
+            <column name="SHEET_DATA" />
+        </property>
+    </class>
+</hibernate-mapping>

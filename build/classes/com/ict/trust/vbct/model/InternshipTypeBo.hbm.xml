@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 31-Mar-2016 4:59:43 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ict.trust.vbct.model.InternshipTypeBo" table="internship">
+        <id name="id" type="int">
+            <column name="internship_id" />
+            <generator class="increment" />
+        </id>
+        <property name="internship_type" type="java.lang.String">
+            <column name="INTERNSHIP_TYPE" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="internship_desc" />
+        </property>
+        <property name="internship_name" type="java.lang.String">
+            <column name="INTERNSHIP_NAME" />
+        </property>
+    </class>
+</hibernate-mapping>

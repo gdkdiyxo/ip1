@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2-Mar-2016 6:11:11 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ict.trust.vbct.model.StudentCertificateBo" table="student_certificate">
+        <id name="certificate_id" type="int">
+            <column name="CERTIFICATE_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="student_id" type="java.lang.String">
+            <column name="STUDENT_ID" />
+        </property>
+        <property name="certificate_title" type="java.lang.String">
+            <column name="CERTIFICATE_TITLE" />
+        </property>
+        <property name="certificate_body" type="java.lang.String">
+            <column name="CERTIFICATE_BODY" />
+        </property>
+    </class>
+</hibernate-mapping>

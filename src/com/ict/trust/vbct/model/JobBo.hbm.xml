@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 1-Mar-2016 11:25:14 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ict.trust.vbct.model.JobBo" table="job">
+        <id name="job_id" type="int">
+            <column name="JOB_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="job_position" type="java.lang.String">
+            <column name="JOB_POSITION" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="requirements" type="java.lang.String">
+            <column name="REQUIREMENTS" />
+        </property>
+        <property name="salary" type="int">
+            <column name="SALARY" />
+        </property>
+        <property name="company_id" type="int">
+            <column name="company_id" />
+        </property>
+        <property name="responsibilities" type="java.lang.String">
+            <column name="RESPONSIBILITIES" />
+        </property>
+          <property name="job_skill" type="java.lang.String">
+            <column name="job_skill" />
+        </property>
+          <property name="internship_type" type="java.lang.String">
+            <column name="internship_type" />
+        </property>
+    </class>
+</hibernate-mapping>

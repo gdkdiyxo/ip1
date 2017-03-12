@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 Jul, 2015 4:12:06 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ict.trust.vbct.model.AddImageGalleryBO" table="gallety_mst">
+        <id name="gallery_id" type="java.lang.String">
+            <column name="GALLERY_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="album_id" type="java.lang.String">
+            <column name="album_id" />
+        </property>
+        <property name="gallery_img" type="java.lang.String">
+            <column name="GALLERY_IMG" />
+        </property>
+        <property name="upd_dt" type="java.lang.String">
+            <column name="UPD_DT" />
+        </property>
+        <property name="upd_usr" type="java.lang.String">
+            <column name="UPD_USR" />
+        </property>
+        <property name="crt_dt" type="java.lang.String">
+            <column name="CRT_DT" />
+        </property>
+        <property name="crt_usr" type="java.lang.String">
+            <column name="CRT_USR" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+    </class>
+</hibernate-mapping>

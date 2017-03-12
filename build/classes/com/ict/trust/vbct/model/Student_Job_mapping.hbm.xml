@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20-Mar-2016 12:45:39 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ict.trust.vbct.model.Student_Job_mapping" table="student_job_master">
+        <id name="student_job_id" type="int">
+            <column name="STUDENT_JOB_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="job_id" type="int">
+            <column name="JOB_ID" />
+        </property>
+        <property name="student_id" type="int">
+            <column name="STUDENT_ID" />
+        </property>
+         <property name="flag" type="java.lang.String">
+            <column name="flag" />
+        </property>
+    </class>
+</hibernate-mapping>

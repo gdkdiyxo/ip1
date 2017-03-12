@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2-Mar-2016 3:29:18 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ict.trust.vbct.model.StudentInfoBo" table="student">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="student_id" type="int">
+            <column name="STUDENT_ID" />
+        </property>
+        <property name="year" type="int">
+            <column name="YEAR" />
+        </property>
+        <property name="fname" type="java.lang.String">
+            <column name="FNAME" />
+        </property>
+        <property name="lname" type="java.lang.String">
+            <column name="LNAME" />
+        </property>
+        <property name="mname" type="java.lang.String">
+            <column name="MNAME" />
+        </property>
+        <property name="stu_email" type="java.lang.String">
+            <column name="STU_EMAIL" />
+        </property>
+        <property name="stu_telephone" type="java.lang.String">
+            <column name="STU_TELEPHONE" />
+        </property>
+        <property name="gender" type="java.lang.String">
+            <column name="GENDER" />
+        </property>
+        <property name="canada_status" type="java.lang.String">
+            <column name="CANADA_STATUS" />
+        </property>
+        <property name="semester" type="java.lang.String">
+            <column name="SEMESTER" />
+        </property>
+       <property name="internship_status" type="java.lang.String">
+            <column name="INTERNSHIP_STATUS" />
+        </property>
+        <property name="student_status" type="java.lang.String">
+            <column name="student_status" />
+        </property> 
+          <property name="country" type="java.lang.String">
+            <column name="country" />
+        </property> 
+        
+    </class>
+</hibernate-mapping>

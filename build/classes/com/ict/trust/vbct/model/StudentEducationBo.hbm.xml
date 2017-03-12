@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2-Mar-2016 3:29:44 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ict.trust.vbct.model.StudentEducationBo" table="student_edu">
+        <id name="stu_edu_id" type="int">
+            <column name="EDU_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="student_id" type="int">
+            <column name="STUDENT_ID" />
+        </property>
+        <property name="degree_type" type="java.lang.String">
+            <column name="DEGREE_TYPE" />
+        </property>
+        <property name="major" type="java.lang.String">
+            <column name="MAJOR" />
+        </property>
+        <property name="degree_gpa" type="java.lang.String">
+            <column name="DEGREE_GPA" />
+        </property>
+        <property name="university" type="java.lang.String">
+            <column name="UNIVERSITY" />
+        </property>
+        <property name="university_location" type="java.lang.String">
+            <column name="UNIVERSITY_LOCATION" />
+        </property>
+    </class>
+</hibernate-mapping>

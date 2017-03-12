@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 06-Jul-2015 18:16:44 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ict.trust.vbct.model.VbctLoginBO" table="vbct_login">
+        <id name="login_id" type="java.lang.String">
+            <column name="LOGIN_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="dsgn_id" type="java.lang.String">
+            <column name="DSGN_ID" />
+        </property>
+        <property name="login_name" type="java.lang.String">
+            <column name="LOGIN_NAME" />
+        </property>
+        <property name="login_password" type="java.lang.String">
+            <column name="LOGIN_PASSWORD" />
+        </property>
+        <property name="first_name" type="java.lang.String">
+            <column name="FIRST_NAME" />
+        </property>
+        <property name="middle_name" type="java.lang.String">
+            <column name="MIDDLE_NAME" />
+        </property>
+        <property name="last_name" type="java.lang.String">
+            <column name="LAST_NAME" />
+        </property>
+        <property name="email_id" type="java.lang.String">
+            <column name="EMAIL_ID" />
+        </property>
+        <property name="dob" type="java.lang.String">
+            <column name="DOB" />
+        </property>
+        <property name="phone_no" type="java.lang.String">
+            <column name="PHONE_NO" />
+        </property>
+        <property name="service_flg" type="java.lang.String">
+            <column name="SERVICE_FLG" />
+        </property>
+        <property name="lang_id" type="java.lang.String">
+            <column name="LANG_ID" />
+        </property>
+        <property name="crt_dt" type="java.lang.String">
+            <column name="CRT_DT" />
+        </property>
+        <property name="crt_usr" type="java.lang.String">
+            <column name="CRT_USR" />
+        </property>
+        <property name="lst_upd_usr" type="java.lang.String">
+            <column name="LST_UPD_USR" />
+        </property>
+        <property name="lst_upd_dt" type="java.lang.String">
+            <column name="LST_UPD_DT" />
+        </property>
+        <property name="service_expiry_dt" type="java.lang.String">
+            <column name="SERVICE_EXPIRY_DT" />
+        </property>
+        <property name="forgot_pwd" type="java.lang.String">
+            <column name="FORGOT_PWD" />
+        </property>
+        <property name="frst_login_flg" type="java.lang.String">
+            <column name="FRST_LOGIN_FLG" />
+        </property>
+        <property name="pswd_expire_dt" type="java.lang.String">
+            <column name="PSWD_EXPIRE_DT" />
+        </property>
+        <property name="lst_pswd_upd_dt" type="java.lang.String">
+            <column name="LST_PSWD_UPD_DT" />
+        </property>
+        <property name="login_starttime" type="java.lang.String">
+            <column name="LOGIN_STARTTIME" />
+        </property>
+        <property name="login_endtime" type="java.lang.String">
+            <column name="LOGIN_ENDTIME" />
+        </property>
+        <property name="ipaddr" type="java.lang.String">
+            <column name="IPADDR" />
+        </property>
+    </class>
+</hibernate-mapping>

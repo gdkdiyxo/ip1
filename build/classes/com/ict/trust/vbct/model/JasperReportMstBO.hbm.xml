@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9 Jul, 2015 12:11:14 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ict.trust.vbct.model.JasperReportMstBO" table="jasper_report_mst">
+        <id name="jasper_rep_id" type="java.lang.String">
+            <column name="JASPER_REP_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="jasper_id" type="java.lang.String">
+            <column name="JASPER_ID" />
+        </property>
+        <property name="rep_title" type="java.lang.String">
+            <column name="REP_TITLE" />
+        </property>
+        <property name="jasper_decs" type="java.lang.String">
+            <column name="JASPER_DECS" />
+        </property>
+        <property name="rep_name" type="java.lang.String">
+            <column name="REP_NAME" />
+        </property>
+        <property name="jasper_heading" type="java.lang.String">
+            <column name="JASPER_HEADING" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+        <property name="upd_dt" type="java.lang.String">
+            <column name="UPD_DT" />
+        </property>
+        <property name="upd_usr" type="java.lang.String">
+            <column name="UPD_USR" />
+        </property>
+        <property name="crt_dt" type="java.lang.String">
+            <column name="CRT_DT" />
+        </property>
+        <property name="crt_usr" type="java.lang.String">
+            <column name="CRT_USR" />
+        </property>
+        <property name="jasper_data" type="binary">
+            <column name="JASPER_DATA" />
+        </property>
+    </class>
+</hibernate-mapping>
